@@ -1,0 +1,15 @@
+{
+  "name": "TwitterGroupMessageArchiver",
+  "version": "1.0.0",
+  "description": "Archives twitter group messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Marten",
+  "license": "ISC",
+  "dependencies": {
+    "datejs": "^1.0.0-rc3",
+    "puppeteer": "^5.5.0"
+  }
+}
