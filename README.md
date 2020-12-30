@@ -1,5 +1,7 @@
 # Twitter Group Message Archiver
 
+This tool scrapes the message history from a specific Twitter group message and exports it as json.
+
 ## Prerequisites
 - Install Node 12 via NVM: https://github.com/nvm-sh/nvm
 
@@ -16,6 +18,13 @@ export TWITTER_MESSAGE_ID=1315655381037838337
 The message id, is the id in the url: https://twitter.com/messages/1315655381037838337
 
 Run the script via: `node index.js`
+
+## Convert JSON to CSV
+You can simply convert the exported json to csv via json2csv: `npm i -g json2csv`
+```
+json2csv -i messages.json messages.csv -f timestamp,author,text,url -o messages.csv
+```
+Now you can simply import the csv to Google Sheets, etc.
 
 ## Debugging
 You can debug and connect node to an existing browser via:
